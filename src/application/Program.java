@@ -1,5 +1,6 @@
 package application;
 
+import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 
@@ -32,6 +33,15 @@ public class Program {
 		for (Seller obj : list2) {
 			System.out.println(obj);
 		}
+		
+		System.out.println("--------Test 4----------");
+		Seller s = new Seller(null, "Toquinho Brasil", "tq@gmail.com", new Date(), 4000.00, dp);
+		sd.insert(s);
+		
+		System.out.println("Inseridooo, ID: " + s.getId());
+		
+		
+		
 
 	}
 
