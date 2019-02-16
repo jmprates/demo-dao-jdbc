@@ -34,11 +34,19 @@ public class Program {
 			System.out.println(obj);
 		}
 		
-		System.out.println("--------Test 4----------");
-		Seller s = new Seller(null, "Toquinho Brasil", "tq@gmail.com", new Date(), 4000.00, dp);
-		sd.insert(s);
+//		System.out.println("--------Test 4----------");
+//		Seller s = new Seller(null, "Toquinho Brasil", "tq@gmail.com", new Date(), 4000.00, dp);
+//		sd.insert(s);
+//		
+//		System.out.println("Inseridooo, ID: " + s.getId());
 		
-		System.out.println("Inseridooo, ID: " + s.getId());
+		
+		System.out.println("--------Test 4----------");
+		s1 = sd.findById(1);
+		s1.setName("Bob Brown");
+		sd.update(s1);
+		
+		System.out.println("Atualizado ID: " + s1.getId());
 		
 		
 		
