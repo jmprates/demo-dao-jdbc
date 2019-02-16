@@ -25,6 +25,13 @@ public class Program {
 		for (Seller obj : list) {
 			System.out.println(obj);
 		}
+		
+		System.out.println("--------Test 3----------");
+		List<Seller> list2 = sd.findAll();
+		
+		for (Seller obj : list2) {
+			System.out.println(obj);
+		}
 
 	}
 
